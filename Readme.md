@@ -44,6 +44,14 @@ Start the chatbot server:
 ```sh
 python app.py
 ```
+### Docker Image
+```sh
+docker pull sayli98/openlakebackend:v1
+```
+#### Usage
+```
+docker run -d -p 8000:8000 sayli98/openlakebackend:v1
+```
 
 ### 6️⃣ Start the Frontend
 For a user-friendly interface, start the frontend (if applicable):
@@ -51,7 +59,6 @@ For a user-friendly interface, start the frontend (if applicable):
 cd FrontEnd
 npm install  # Install frontend dependencies (if applicable)
 npm start    # Run the frontend
-```
 
 ---
 
