@@ -59,6 +59,16 @@ For a user-friendly interface, start the frontend (if applicable):
 cd FrontEnd
 npm install  # Install frontend dependencies (if applicable)
 npm start    # Run the frontend
+```
+### Docker Image
+```sh
+docker pull sayli98/openlake:v1
+```
+#### Usage
+```
+docker run -d -p 3000:3000 sayli98/openlake:v1
+```
+
 
 ---
 
