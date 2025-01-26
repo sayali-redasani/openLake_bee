@@ -25,11 +25,14 @@ The chatbot leverages a Graph RAG (Retrieval-Augmented Generation) architecture 
 #### Sentiment Analysis Agent:
 - Extracts emotional context from dialogues
 - Uses context-aware sentiment analysis
+
+
 ![alt text](sentiment_analysis.png)
 
 #### Query Response Agent:
 - Retrieves relevant scene contexts
 - Generates contextually rich responses
+
 ![alt text](queryResponse.png)
 
 ### 2.4 Embedding & Retrieval
