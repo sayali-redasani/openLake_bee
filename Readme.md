@@ -1,5 +1,8 @@
 # BEE Movie Chatbot
 
+## Chatbot walkthrough
+https://www.loom.com/share/36cbd036c45844b3baf078d648c6d103?sid=d2b2fc3d-0d7d-465a-9800-05b12a937fe1
+
 ## 📝 Overview
 The **BEE Movie Chatbot** is a Retrieval-Augmented Generation (RAG) and sentiment analysis-based chatbot built using **Langraph**. This agentic chatbot is designed to analyze sentiment, understand queries, and provide responses based on the context of the Bee Movie.
 
