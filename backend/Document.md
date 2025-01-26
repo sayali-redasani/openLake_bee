@@ -15,7 +15,8 @@ The chatbot leverages a Graph RAG (Retrieval-Augmented Generation) architecture 
 - Manages agent routing and workflow orchestration
 
 ### 2.3 LangGraph RAG Agents
-![alt text](openlake-1.png)
+
+![alt text](openlake.png)
 
 #### Supervisor Agent:
 - Determines query type and agent routing
@@ -24,12 +25,12 @@ The chatbot leverages a Graph RAG (Retrieval-Augmented Generation) architecture 
 #### Sentiment Analysis Agent:
 - Extracts emotional context from dialogues
 - Uses context-aware sentiment analysis
-![alt text](sentiment_analysis-1.png)
+![alt text](sentiment_analysis.png)
 
 #### Query Response Agent:
 - Retrieves relevant scene contexts
 - Generates contextually rich responses
-![alt text](queryResponse-1.png)
+![alt text](queryResponse.png)
 
 ### 2.4 Embedding & Retrieval
 
