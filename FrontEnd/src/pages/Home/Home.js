@@ -32,7 +32,7 @@ import styles from "./Home.module.css";
 import KeyboardVoiceIcon from "@mui/icons-material/KeyboardVoice";
 
 const sdk = require("microsoft-cognitiveservices-speech-sdk");
-const SPEECH_KEY = "f4a8f5be7801494fa47bc87d6d8ca31d";
+const SPEECH_KEY = "YOUR API KEY";
 const SPEECH_REGION = "eastus";
 const speechConfig = sdk.SpeechConfig.fromSubscription(
   SPEECH_KEY,
@@ -40,10 +40,6 @@ const speechConfig = sdk.SpeechConfig.fromSubscription(
 );
 speechConfig.speechRecognitionLanguage = "en-US";
 speechConfig.speechSynthesisVoiceName = "en-US-AvaMultilingualNeural";
-//Key1 : 334e16bf5eb643a6b8ebd8f0e61bf937u0i
-//Key2 : 8bcb5f3956be4afdbbbc3c3b937fa437
-//Region : eastus
-//Endpoint : https://eastus.api.cognitive.microsoft.com/
 
 const Home = () => {
   const navigate = useNavigate();
