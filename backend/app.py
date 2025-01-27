@@ -13,8 +13,8 @@ app = Flask(__name__)
 CORS(app)
 
 # Load credentials from environment variables
-MONGO_USERNAME = os.getenv('MONGO_USERNAME', 'sayaliredasani')  # Default if not set
-MONGO_PASSWORD = os.getenv('MONGO_PASSWORD', 'Sayali@98')  # Default if not set
+MONGO_USERNAME = os.getenv('MONGO_USERNAME')  # Default if not set
+MONGO_PASSWORD = os.getenv('MONGO_PASSWORD')  # Default if not set
 encoded_username = urllib.parse.quote_plus(MONGO_USERNAME)
 encoded_password = urllib.parse.quote_plus(MONGO_PASSWORD)
 MONGO_URI = f"mongodb+srv://{encoded_username}:{encoded_password}@cluster0.mnbs1.mongodb.net/?retryWrites=true&w=majority"

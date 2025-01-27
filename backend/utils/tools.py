@@ -16,9 +16,7 @@ def get_dialogues_summary(docs):
     retrieved_docs = [doc for doc, _ in docs]
     summary = [doc.metadata.get("summary", "No summary available") for doc in retrieved_docs]
     summary = '\n\n'.join(summary)
-    # print(f"Summary: {summary}")
     dialogues = {f"scene_{i+1}": doc.page_content for i, doc in enumerate(retrieved_docs)}
-    # print(dialogues)
     return dialogues, summary
 
 def retriever(prompt:str):
