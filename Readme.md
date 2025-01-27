@@ -27,6 +27,7 @@ cd backend
 Create a `.env` file in the root directory and add your API keys and other environment variables:
 ```ini
 OPENAI_API_KEY=your_api_key_here
+COHERE_API_KEY=your_api_key_here
 ```
 
 ### 3️⃣ Install Dependencies
