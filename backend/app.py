@@ -13,8 +13,8 @@ app = Flask(__name__)
 CORS(app)
 
 
-MONGO_USERNAME = os.getenv('MONGO_USERNAME')
-MONGO_PASSWORD = os.getenv('MONGO_PASSWORD') 
+MONGO_USERNAME = os.getenv('MONGO_USERNAME',"sayaliredasani")
+MONGO_PASSWORD = os.getenv('MONGO_PASSWORD',"Sayali@98") 
 
 encoded_username = urllib.parse.quote_plus(MONGO_USERNAME)
 encoded_password = urllib.parse.quote_plus(MONGO_PASSWORD)
@@ -117,4 +117,4 @@ def one_file():
         return jsonify({"error": "Failed to retrieve data"}), 500
 
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0', port=8000)
+    app.run(debug=True, host='0.0.0.0', port=9020)

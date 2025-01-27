@@ -70,7 +70,7 @@ const Home = () => {
   const handleCollapse5 = async () => {
     setLoadingChatHistory(true);
     const response = await axios.get(
-      "http://127.0.0.1:8000/list_files"
+      "http://3.88.201.94:9020/list_files"
     );
     console.log(response.data);
     setFiles(response.data);  
@@ -96,7 +96,7 @@ const Home = () => {
     console.log("get_file_single");
     console.log("this is file name" + selectedFile);
     const response = await axios.post(
-      "http://127.0.0.1:8000/one_file",
+      "http://3.88.201.94:9020/one_file",
       {
         file: selectedFile,
       }
@@ -355,7 +355,7 @@ const Home = () => {
     if (query) {
       try {
         const response = await fetch(
-          "http://127.0.0.1:8000/rag_qa_api_stream",
+          "http://3.88.201.94:9020/rag_qa_api_stream",
           {
             method: "POST",
             headers: {
