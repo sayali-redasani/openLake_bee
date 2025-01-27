@@ -13,8 +13,8 @@ app = Flask(__name__)
 CORS(app)
 
 
-MONGO_USERNAME = os.getenv('MONGO_USERNAME')  # Default if not set
-MONGO_PASSWORD = os.getenv('MONGO_PASSWORD')  # Default if not set
+MONGO_USERNAME = os.getenv('MONGO_USERNAME')
+MONGO_PASSWORD = os.getenv('MONGO_PASSWORD') 
 
 encoded_username = urllib.parse.quote_plus(MONGO_USERNAME)
 encoded_password = urllib.parse.quote_plus(MONGO_PASSWORD)
